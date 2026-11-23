@@ -1,0 +1,21 @@
+{
+  "nombre": "Vespinos de Málaga",
+  "lema": "Rescatamos Vespinos de la chatarra y los ponemos otra vez en la carretera.",
+  "descripcion": [
+    "Somos una asociación de usuarios del Vespino, el ciclomotor que movió a media España en los años setenta y ochenta. Un grupo de aficionados compra unidades viejas que iban a acabar en la chatarra, las restaura a fondo y las deja listas para circular.",
+    "Entre todos los socios reunimos unos 150 Vespinos, de los primeros de 1968 a versiones muy posteriores. Hacemos rutas en grupo, salidas solidarias y quedadas, y nos juntamos en la sede para charlar y compartir cómo se restaura cada pieza."
+  ],
+  "sede": {
+    "direccion": "Calle Shanti Andía, 13, local 2",
+    "codigoPostal": "29006",
+    "zona": "Málaga, distrito Teatinos–Cortijo Alto",
+    "nota": "El Ayuntamiento nos cedió el local en octubre de 2025, por periodos de cinco años."
+  },
+  "instagram": "https://www.instagram.com/vespinos_de_malaga/",
+  "instagramUsuario": "@vespinos_de_malaga",
+  "datos": [
+    { "valor": "1968", "texto": "año del primer Vespino" },
+    { "valor": "150", "texto": "Vespinos entre todos los socios, aproximadamente" },
+    { "valor": "2025", "texto": "inauguramos nuestra sede en Teatinos" }
+  ]
+}

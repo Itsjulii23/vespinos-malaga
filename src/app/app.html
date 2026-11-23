@@ -1,1 +1,38 @@
-<router-outlet />
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+
+<header class="cabecera">
+  <a class="marca" routerLink="/" aria-label="Vespinos de Málaga, inicio">
+    <svg class="escudo" viewBox="0 0 40 40" aria-hidden="true">
+      <circle cx="20" cy="20" r="19" fill="#5B2D86" />
+      <path d="M20 1a19 19 0 0 1 0 38z" fill="#2F7D4F" />
+      <circle cx="20" cy="20" r="7" fill="#F2F5F0" />
+    </svg>
+    <span>{{ club.nombre }}</span>
+  </a>
+  <nav class="menu" aria-label="Principal">
+    @for (e of enlaces; track e.ruta) {
+      <a [routerLink]="e.ruta" routerLinkActive="activo">{{ e.texto }}</a>
+    }
+    <a class="boton boton-chico" routerLink="/unete">Únete</a>
+  </nav>
+</header>
+
+<main id="contenido">
+  <router-outlet />
+</main>
+
+<div class="cuadros" aria-hidden="true"></div>
+
+<footer class="pie">
+  <div class="pie-grid">
+    <div>
+      <p class="pie-titulo">{{ club.nombre }}</p>
+      <p>{{ club.sede.direccion }}, {{ club.sede.codigoPostal }} {{ club.sede.zona }}</p>
+    </div>
+    <div>
+      <p class="pie-titulo">Síguenos</p>
+      <p><a [href]="club.instagram" target="_blank" rel="noopener">Instagram {{ club.instagramUsuario }}</a></p>
+    </div>
+  </div>
+  <p class="pie-nota">© {{ anio }} {{ club.nombre }}. Las fotos marcadas como provisionales son de ejemplo.</p>
+</footer>
