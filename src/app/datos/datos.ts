@@ -2,6 +2,7 @@ import club from './club.json';
 import quedadasJson from './quedadas.json';
 import patrocinadoresJson from './patrocinadores.json';
 import galeriaJson from './galeria.json';
+import historiaJson from './historia.json';
 
 export interface Quedada {
   slug: string;
@@ -26,9 +27,20 @@ export interface Foto {
   ancho: number;
   alto: number;
   pie: string;
+  autor?: string;
+  licencia?: string;
+  fuente?: string;
+}
+
+export interface Hito {
+  anio: string;
+  titulo: string;
+  texto: string;
+  foto?: string;
 }
 
 export const CLUB = club;
+export const HISTORIA: Hito[] = historiaJson;
 export const PATROCINADORES: Patrocinador[] = patrocinadoresJson;
 export const GALERIA: Foto[] = galeriaJson;
 

@@ -1,0 +1,14 @@
+[
+  { "anio": "1968", "titulo": "Nace el Vespino", "texto": "Moto Vespa S.A. empieza a fabricarlo en Madrid. Es un ciclomotor de dos tiempos y unos 49 cc. A la primera serie se la conoce como «Mortadelo»." },
+  { "anio": "1969", "titulo": "Llega el Lujo", "texto": "El Lujo añade encendido electrónico, cromados y sillín corrido. Convive con el Normal y el Tour." },
+  { "anio": "1972", "titulo": "El Lujo S", "texto": "Toma el relevo del Lujo y se fabrica hasta 1973.", "foto": "img/vespinos/vespino-01.jpg" },
+  { "anio": "1973", "titulo": "Una familia entera", "texto": "Salen las series T, L y GL, con distintos acabados. La L seguirá a la venta hasta 1978.", "foto": "img/vespinos/vespino-02.jpg" },
+  { "anio": "1977", "titulo": "TL y TN", "texto": "Llegan el TL y el TN, que cierran la serie T en 1979.", "foto": "img/vespinos/vespino-03.jpg" },
+  { "anio": "1980", "titulo": "Super Confort", "texto": "El SC renueva el aspecto del Vespino y se fabrica hasta 1985. Sobre su base nace la serie especial SCAN.", "foto": "img/vespinos/vespino-12.jpg" },
+  { "anio": "1985", "titulo": "Admisión por láminas", "texto": "El AL cambia la válvula rotativa por admisión por láminas. Es el último Vespino de 6 voltios." },
+  { "anio": "1988", "titulo": "Arranque eléctrico", "texto": "El XE, llamado Elestart, incorpora arranque eléctrico." },
+  { "anio": "1990", "titulo": "New Look", "texto": "El NL y el NLX pasan a 12 voltios y estrenan imagen.", "foto": "img/vespinos/vespino-08.jpg" },
+  { "anio": "1992", "titulo": "Fórmula 90", "texto": "El F9 sube la compresión a 10,2:1 y estrena transmisión. En 1993 llega el Fast Rider, con freno de disco delantero." },
+  { "anio": "1994", "titulo": "Vespinos con pizza", "texto": "Empieza la serie Telepizza, que llegará hasta el año 2000 repartida en seis series." },
+  { "anio": "2025", "titulo": "Los Vespinos se juntan en Málaga", "texto": "Vespinos de Málaga inaugura su sede en Teatinos, con unos 150 Vespinos entre todos los socios." }
+]

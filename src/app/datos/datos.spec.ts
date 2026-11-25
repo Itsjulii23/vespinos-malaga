@@ -1,4 +1,4 @@
-import { GALERIA, QUEDADAS, formatearFecha, partesFecha, quedadasPasadas, quedadasProximas } from './datos';
+import { GALERIA, HISTORIA, QUEDADAS, formatearFecha, partesFecha, quedadasPasadas, quedadasProximas } from './datos';
 
 describe('datos del club', () => {
   it('las quedadas tienen slugs únicos', () => {
@@ -23,6 +23,14 @@ describe('datos del club', () => {
       expect(f.ancho).toBeGreaterThan(0);
       expect(f.alto).toBeGreaterThan(0);
       expect(f.pie.length).toBeGreaterThan(0);
+    }
+  });
+
+  it('la historia va por orden de año y sus fotos existen en la galería', () => {
+    const anios = HISTORIA.map((h) => h.anio);
+    expect(anios).toEqual([...anios].sort());
+    for (const h of HISTORIA.filter((x) => x.foto)) {
+      expect(GALERIA.some((f) => f.src === h.foto)).toBe(true);
     }
   });
 

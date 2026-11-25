@@ -15,7 +15,7 @@ import { CLUB, GALERIA } from '../datos/datos';
           }
           <p><a class="enlace" routerLink="/unete">Cómo hacerte socio</a></p>
         </div>
-        <img class="foto" [src]="foto.src" alt="Foto provisional de la sede" [width]="foto.ancho" [height]="foto.alto" />
+        <img class="foto" [src]="foto.src" [alt]="foto.pie" [width]="foto.ancho" [height]="foto.alto" />
       </div>
     </section>
 

@@ -20,7 +20,7 @@ import { Matricula } from './matricula';
             }
           </div>
         </div>
-        <img class="foto foto-ancha" [src]="q.foto" [alt]="'Foto provisional: ' + q.titulo" width="1200" height="900" />
+        <img class="foto foto-ancha" [src]="q.foto" [alt]="'Foto de ejemplo: ' + q.titulo" width="1200" height="900" />
         <div class="texto">
           @for (p of q.texto; track p) {
             <p>{{ p }}</p>

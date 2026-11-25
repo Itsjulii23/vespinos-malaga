@@ -8,7 +8,7 @@ Está hecha con Angular y no tiene servidor ni base de datos. Es un proyecto ind
 
 ## Qué hay dentro
 
-- **Inicio**: la próxima quedada y el modo de apuntarse, lo primero que se ve.
+- **Inicio**: presentación del club con Vespinos que se relevan solos, la línea del tiempo del Vespino (de 1968 a hoy, con un Vespino que baja por la carretera al hacer scroll) y la próxima quedada.
 - **Quiénes somos**: la historia del club, la sede y las cifras.
 - **Quedadas**: el listado y una página para cada una. Las futuras salen como "próximas" solas, según la fecha.
 - **Galería**: mosaico de fotos con un visor a pantalla completa.
@@ -20,7 +20,7 @@ Está hecha con Angular y no tiene servidor ni base de datos. Es un proyecto ind
 El estilo busca algo moderno por dentro y retro por fuera, como los Vespinos de los años 60 y 70 que restauran.
 
 - **Colores**: verde y morado (los del escudo), blanco roto de fondo y un negro apagado para el texto. Los define `:root` al principio de `src/styles.css`. Si hay que retocar un color, se cambia ahí y se aplica en toda la web.
-- **Tipografía**: siempre retro. Shrikhand para los titulares, Alfa Slab One para números y placas de matrícula, y Barlow para el texto. Las fuentes van instaladas en el proyecto, no se piden a Google.
+- **Tipografía**: siempre retro. Shrikhand para los titulares, Alfa Slab One para números y placas de matrícula, y Zilla Slab para el texto. Las fuentes van instaladas en el proyecto, no se piden a Google.
 - **Reglas de diseño**: están en [DESIGN.md](DESIGN.md). Léelas antes de tocar la interfaz. Un test (`src/app/estilos.spec.ts`) falla si alguien mete una tipografía que no sea de las tres.
 - **Para quién es y por qué**: [PRODUCT.md](PRODUCT.md) cuenta quién usa la web y qué se quiere conseguir con ella.
 
@@ -52,6 +52,7 @@ El texto y las fotos no están metidos en el código. Viven en archivos JSON den
 | `club.json` | Descripción, sede, Instagram y cifras |
 | `quedadas.json` | Una entrada por quedada |
 | `galeria.json` | Las fotos de la galería, con su tamaño y pie |
+| `historia.json` | Los años de la línea del tiempo de la portada. Una foto es opcional y debe estar en `galeria.json` |
 | `patrocinadores.json` | Los patrocinadores |
 
 ### Añadir una quedada
@@ -83,7 +84,7 @@ Hay que poner el tamaño real de cada foto para que la galería no dé saltos mi
 
 Todavía faltan cosas reales: fotos del club, logos de patrocinadores y fechas de quedadas. Mientras tanto, la web usa material de relleno, y está marcado para que nadie lo confunda con información verdadera.
 
-- **Fotos provisionales**: están en `public/img/provisional/` y son SVG de relleno. Se regeneran con `node scripts/generar-provisionales.mjs`. Para usar fotos reales, cámbialas en `galeria.json` y `quedadas.json`.
+- **Fotos de ejemplo**: están en `public/img/vespinos/` y son fotos reales de Vespinos con licencia libre, sacadas de Wikimedia Commons. Sus autores y licencias están en `galeria.json` y se enseñan en la galería, en "Créditos de las fotos". Para usar fotos del club, cambia la ruta, el ancho y el alto en `galeria.json` y `quedadas.json`, y borra de la galería el campo de autor y licencia de las que sustituyas.
 - **Quedadas y patrocinadores de ejemplo**: la web los marca con una etiqueta verde de "ejemplo". En las quedadas desaparece al poner `"provisional": false`. En galería, patrocinadores y únete hay que borrar a mano el `<p class="etiqueta">` del archivo correspondiente en `src/app/paginas/`.
 - **El escudo** de la cabecera es un dibujo provisional con los colores del club, hasta que haya un archivo oficial.
 
@@ -106,7 +107,7 @@ src/
     datos/        los JSON de contenido
   styles.css      colores, tipografías y estilos de toda la web
 public/img/       fotos y favicon
-scripts/          utilidades (fotos provisionales, 404 para GitHub Pages)
+scripts/          utilidades (404 para GitHub Pages)
 ```
 
 ## Contacto con el club

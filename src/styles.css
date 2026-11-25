@@ -1,8 +1,8 @@
 @import '@fontsource/shrikhand/400.css';
 @import '@fontsource/alfa-slab-one/400.css';
-@import '@fontsource/barlow/400.css';
-@import '@fontsource/barlow/600.css';
-@import '@fontsource/barlow/700.css';
+@import '@fontsource/zilla-slab/400.css';
+@import '@fontsource/zilla-slab/500.css';
+@import '@fontsource/zilla-slab/700.css';
 
 :root {
   --esmalte: #efede4;
@@ -17,7 +17,7 @@
   --texto: 38rem;
   --titular: 'Shrikhand', 'Georgia', serif;
   --placa: 'Alfa Slab One', 'Rockwell', serif;
-  --cuerpo: 'Barlow', system-ui, sans-serif;
+  --cuerpo: 'Zilla Slab', 'Rockwell', 'Georgia', serif;
   --sombra: 0 6px 18px rgba(35, 33, 36, 0.28);
 }
 
@@ -30,7 +30,7 @@ body {
   margin: 0;
   background: var(--esmalte);
   color: var(--tinta);
-  font: 400 1.1875rem/1.6 var(--cuerpo);
+  font: 500 1.25rem/1.55 var(--cuerpo);
   -webkit-font-smoothing: antialiased;
   scrollbar-color: var(--verde) var(--esmalte-oscuro);
 }
@@ -61,7 +61,7 @@ p { margin: 0 0 1em; max-width: var(--texto); }
 .marca { display: flex; align-items: center; gap: 0.65rem; text-decoration: none; font: 400 1.4rem/1 var(--titular); }
 .escudo { width: 2.6rem; height: 2.6rem; flex: none; }
 .menu { display: flex; flex-wrap: wrap; align-items: center; gap: 0.25rem 1.5rem; }
-.menu a:not(.boton) { text-decoration: none; padding: 0.4rem 0; border-bottom: 3px solid transparent; font-weight: 700; }
+.menu a:not(.boton) { text-decoration: none; padding: 0.4rem 0; border-bottom: 3px solid transparent; font: 400 0.95rem/1 var(--placa); text-transform: uppercase; letter-spacing: 0.07em; }
 .menu a:not(.boton):hover, .menu a.activo { border-bottom-color: var(--faro); }
 
 /* Botones y enlaces */
@@ -74,7 +74,7 @@ p { margin: 0 0 1em; max-width: var(--texto); }
 .boton-claro { background: transparent; color: #fff; border-color: #fff; box-shadow: none; }
 .boton-chico { padding: 0.5rem 1.1rem; font-size: 1rem; }
 .enlace { font-weight: 700; text-decoration-thickness: 2px; text-underline-offset: 4px; color: var(--verde); }
-.etiqueta { display: inline-block; background: var(--faro); color: var(--tinta); font-size: 0.9rem; font-weight: 700; padding: 0.15rem 0.7rem; border-radius: 4px; margin-bottom: 1rem; }
+.etiqueta { display: inline-block; background: var(--faro); color: var(--tinta); font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; padding: 0.15rem 0.7rem; border-radius: 4px; margin-bottom: 1rem; }
 
 /* Contenedores */
 .pagina, .bloque, .hero { max-width: var(--ancho); margin: 0 auto; padding: 3rem 1.25rem; }
@@ -93,14 +93,13 @@ p { margin: 0 0 1em; max-width: var(--texto); }
 }
 
 /* Portada */
-.campo { padding-block: 0; }
+.campo { padding-block: 0; overflow-x: clip; }
 .hero { padding: 2rem 0 4rem; display: grid; grid-template-columns: 1.05fr 1fr; gap: 3rem; align-items: center; }
 .hero h1 { font-size: clamp(3rem, 8vw, 6rem); line-height: 1; margin-bottom: 0.3em; }
 .lema { font-size: 1.4rem; max-width: 28rem; font-weight: 600; }
 .acciones { display: flex; flex-wrap: wrap; gap: 0.9rem; margin-top: 1.75rem; }
 .hero-foto { position: relative; max-width: 30rem; justify-self: center; width: 100%; }
 .marco { position: relative; background: var(--esmalte); border: 0.6rem solid var(--esmalte); border-radius: 1.2rem; box-shadow: var(--sombra); transform: rotate(2deg); }
-.marco > img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 0.6rem; }
 .marco::before, .marco::after, .marco > i::before, .marco > i::after {
   content: ''; position: absolute; width: 0.9rem; height: 0.9rem; border-radius: 50%;
   background: radial-gradient(circle at 35% 30%, #fff 0 15%, #9aa49a 60%, #4b524b);
@@ -130,10 +129,6 @@ p { margin: 0 0 1em; max-width: var(--texto); }
 .tres article { border-top: 6px solid var(--verde); padding-top: 1rem; }
 .tres article:nth-child(2) { border-top-color: var(--morado); }
 .tres article:nth-child(3) { border-top-color: var(--faro); }
-.tira { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(13rem, 1fr); gap: 0.9rem; overflow-x: auto; padding: 0.5rem 0 1rem; margin-bottom: 0.5rem; }
-.tira img { width: 100%; height: 13rem; object-fit: cover; border: 4px solid #fff; border-radius: 10px; box-shadow: var(--sombra); }
-.tira li:nth-child(odd) img { transform: rotate(-1.5deg); }
-.tira li:nth-child(even) img { transform: rotate(1.5deg); }
 
 .banda { max-width: none; background: var(--morado); color: #fff; text-align: center; padding-inline: 1.25rem; }
 .banda-faro { background: var(--faro); color: var(--tinta); }
@@ -193,4 +188,100 @@ p { margin: 0 0 1em; max-width: var(--texto); }
   .hero { padding-bottom: 4.5rem; }
   .hero-placa { left: 0; }
   .visor figure { padding: 4rem 0.5rem 1rem; }
+}
+
+/* Cambio de página: solo el contenido se funde; cabecera y pie se quedan quietos. */
+#contenido { view-transition-name: contenido; }
+::view-transition-group(root) { animation-duration: 0s; }
+::view-transition-old(contenido) { animation: salir-pagina 220ms ease-out both; }
+::view-transition-new(contenido) { animation: entrar-pagina 380ms ease-out 120ms both; }
+@keyframes salir-pagina { to { opacity: 0; } }
+@keyframes entrar-pagina { from { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-old(contenido), ::view-transition-new(contenido) { animation: none; }
+}
+
+.visor figcaption small { display: block; font-weight: 400; font-size: 0.85rem; opacity: 0.8; margin-top: 0.2rem; }
+.creditos { margin-top: 2rem; font-size: 0.95rem; color: var(--tinta-suave); }
+.creditos summary { cursor: pointer; font-weight: 700; }
+.creditos ul { margin: 0.8rem 0 0; padding-left: 1.2rem; }
+.creditos a { color: inherit; }
+
+/* Rótulo de época: sombra desplazada en los titulares y dos rayas de calcomanía bajo la cabecera */
+h1 { text-shadow: 0.05em 0.05em 0 var(--tinta); }
+.cabeza h1, .hero h1 { text-shadow: 0.05em 0.05em 0 var(--morado); }
+h2 { text-shadow: 0.05em 0.05em 0 var(--faro); }
+.cabeza { box-shadow: 0 0.45rem 0 var(--morado), 0 0.9rem 0 var(--faro); margin-bottom: 0.9rem; }
+
+/* Portada: más texto y datos */
+.kicker { font: 400 0.95rem/1 var(--placa); text-transform: uppercase; letter-spacing: 0.1em; color: var(--faro); margin-bottom: 1rem; }
+.hero-parrafo { font-size: 1.15rem; max-width: 32rem; opacity: 0.95; }
+.hero-datos { display: flex; flex-wrap: wrap; gap: 1rem 2rem; margin: 2rem 0 0; padding-top: 1.25rem; border-top: 2px dashed rgba(255, 255, 255, 0.4); }
+.hero-datos dt { font: 400 2rem/1 var(--placa); color: var(--faro); }
+.hero-datos dd { margin: 0.2rem 0 0; max-width: 9.5rem; font-size: 1rem; line-height: 1.25; }
+
+/* Vespinos que se relevan en la portada */
+.rotador { position: relative; }
+.rotador ul { position: relative; aspect-ratio: 4 / 5; }
+.rotador li {
+  position: absolute; inset: 0; opacity: 0; transform: translateX(-14%) rotate(-9deg) scale(0.94);
+  transition: opacity 0.9s ease, transform 1.1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.rotador li.activa { opacity: 1; transform: none; z-index: 2; }
+.rotador li.saliendo { opacity: 0; transform: translateX(38%) rotate(14deg); z-index: 3; }
+.rotador img { width: 100%; height: 100%; object-fit: cover; border-radius: 0.6rem; }
+.rotador-pie {
+  position: absolute; left: 0.6rem; bottom: 0.6rem; margin: 0; max-width: 85%; background: var(--tinta); color: #fff;
+  padding: 0.3rem 0.7rem; font: 400 0.9rem/1.2 var(--placa); border-radius: 4px;
+}
+.rotador-puntos { position: absolute; left: 50%; bottom: -2.4rem; transform: translateX(-50%); display: flex; gap: 0.2rem; }
+.rotador-puntos button { width: 2rem; height: 2rem; padding: 0; border: 0; background: none; cursor: pointer; display: grid; place-items: center; }
+.rotador-puntos button::before { content: ''; width: 0.75rem; height: 0.75rem; border-radius: 50%; border: 2px solid #fff; background: transparent; transition: background 0.2s; }
+.rotador-puntos button.activo::before { background: var(--faro); border-color: var(--faro); }
+.hero { padding-bottom: 5rem; }
+
+/* Cronología: el Vespino baja por la carretera según el scroll */
+.crono { position: relative; margin: 2.5rem 0 1.5rem; --progreso: 0; --via: 3.6rem; }
+.crono ol { position: relative; display: grid; gap: 2.5rem; }
+.crono-via {
+  position: absolute; top: 0; bottom: 0; left: 50%; width: var(--via); transform: translateX(-50%); border-radius: 0.6rem;
+  background: var(--tinta); box-shadow: inset 0 0 0 3px var(--tinta-suave);
+}
+.crono-via::before {
+  content: ''; position: absolute; top: 0.5rem; bottom: 0.5rem; left: 50%; border-left: 4px dashed var(--esmalte); transform: translateX(-2px);
+}
+.crono-vespino {
+  position: absolute; left: 50%; top: calc(var(--progreso) * 100%); z-index: 3; width: 3.1rem; height: auto;
+  transform: translate(-50%, -50%); filter: drop-shadow(0 3px 2px rgba(0, 0, 0, 0.5));
+}
+.v-rueda { fill: #0c0b0d; stroke: #8a8590; stroke-width: 1.5; }
+.v-manillar { fill: var(--esmalte); }
+.v-cuerpo { fill: var(--verde); stroke: var(--verde-hondo); stroke-width: 2; stroke-linejoin: round; }
+.v-sillin { fill: var(--morado); }
+.v-guardabarros { fill: var(--faro); stroke: var(--tinta); stroke-width: 2; }
+.v-faro { fill: var(--faro); stroke: var(--tinta); stroke-width: 2; }
+
+.crono li { position: relative; display: grid; grid-template-columns: 1fr 1fr; align-items: start; }
+.crono-tarjeta {
+  grid-column: 1; margin-right: calc(var(--via) / 2 + 1.4rem); background: #fff; border: 3px solid var(--tinta); border-radius: 12px; padding: 1.1rem 1.3rem 1.3rem;
+  box-shadow: var(--sombra); opacity: 0.55; transform: scale(0.98); transition: opacity 0.4s, transform 0.4s, box-shadow 0.4s;
+}
+.crono li:nth-child(even) .crono-tarjeta { grid-column: 2; margin-right: 0; margin-left: calc(var(--via) / 2 + 1.4rem); }
+.crono li.alcanzado .crono-tarjeta { opacity: 1; transform: none; box-shadow: 6px 6px 0 var(--faro); }
+.crono-anio { display: inline-block; margin: 0 0 0.5rem; padding: 0.15rem 0.7rem; background: var(--verde); color: #fff; border-radius: 6px; font: 400 1.6rem/1.2 var(--placa); }
+.crono-tarjeta h3 { margin-bottom: 0.3em; }
+.crono-tarjeta p:not(.crono-anio) { margin-bottom: 0.7em; }
+.crono-tarjeta img { width: 100%; border-radius: 8px; margin-top: 0.4rem; }
+.bloque-crono { max-width: 62rem; }
+
+@media (max-width: 47.99rem) {
+  .crono { --via: 2.4rem; }
+  .crono-via { left: 1.2rem; }
+  .crono-vespino { left: 1.2rem; width: 1.9rem; }
+  .crono li { grid-template-columns: 1fr; }
+  .crono-tarjeta, .crono li:nth-child(even) .crono-tarjeta { grid-column: 1; margin: 0 0 0 3.4rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .rotador li, .crono-tarjeta { transition: none; }
+  .crono-tarjeta { opacity: 1; transform: none; }
 }

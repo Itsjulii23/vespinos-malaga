@@ -7,22 +7,30 @@ import { GALERIA } from '../datos/datos';
     <header class="cabeza"><h1>Galería</h1></header>
     <section class="pagina pagina-ancha">
       <p class="intro">Vespinos del club, rutas y quedadas. Pulsa una foto para verla grande.</p>
-      <p class="etiqueta">Fotos provisionales hasta que el club mande las suyas</p>
+      <p class="etiqueta">Fotos de ejemplo de Wikimedia Commons hasta que el club mande las suyas</p>
       <ul class="mosaico">
         @for (f of fotos; track f.src; let i = $index) {
           <li>
             <button type="button" (click)="abrir(i)" [attr.aria-label]="'Ampliar: ' + f.pie">
-              <img [src]="f.src" [alt]="'Foto provisional: ' + f.pie" loading="lazy" [width]="f.ancho" [height]="f.alto" />
+              <img [src]="f.src" [alt]="f.pie" loading="lazy" [width]="f.ancho" [height]="f.alto" />
             </button>
           </li>
         }
       </ul>
+      <details class="creditos">
+        <summary>Créditos de las fotos</summary>
+        <ul>
+          @for (f of fotos; track f.src) {
+            <li>{{ f.pie }}: <a [href]="f.fuente">{{ f.autor }}</a>, {{ f.licencia }}</li>
+          }
+        </ul>
+      </details>
     </section>
 
     <dialog #visor class="visor" (keydown)="teclas($event)" (click)="clicFondo($event)" aria-label="Foto ampliada">
       <figure>
-        <img [src]="actual().src" [alt]="'Foto provisional: ' + actual().pie" />
-        <figcaption>{{ actual().pie }} ({{ indice() + 1 }} de {{ fotos.length }})</figcaption>
+        <img [src]="actual().src" [alt]="actual().pie" />
+        <figcaption>{{ actual().pie }} ({{ indice() + 1 }} de {{ fotos.length }})<small>Foto: {{ actual().autor }}, {{ actual().licencia }}</small></figcaption>
       </figure>
       <button type="button" class="visor-cerrar" (click)="cerrar()" aria-label="Cerrar">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19" /></svg>

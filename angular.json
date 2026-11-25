@@ -2,7 +2,8 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "cli": {
-    "packageManager": "npm"
+    "packageManager": "npm",
+    "analytics": "b3cd0c54-eb60-4069-9b72-d76443e5948e"
   },
   "newProjectRoot": "projects",
   "projects": {

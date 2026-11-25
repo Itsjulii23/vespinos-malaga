@@ -1,14 +1,110 @@
 [
-  { "src": "img/provisional/foto-01.svg", "ancho": 1200, "alto": 900, "pie": "Vespino recién restaurado" },
-  { "src": "img/provisional/foto-02.svg", "ancho": 900, "alto": 1200, "pie": "La sede de Teatinos" },
-  { "src": "img/provisional/foto-03.svg", "ancho": 1200, "alto": 1200, "pie": "Detalle del faro" },
-  { "src": "img/provisional/foto-04.svg", "ancho": 1600, "alto": 900, "pie": "Papanoelada motera" },
-  { "src": "img/provisional/foto-05.svg", "ancho": 1200, "alto": 900, "pie": "Ruta en grupo" },
-  { "src": "img/provisional/foto-06.svg", "ancho": 900, "alto": 1200, "pie": "XII Reunión Nacional" },
-  { "src": "img/provisional/foto-07.svg", "ancho": 1200, "alto": 1200, "pie": "Motor desmontado" },
-  { "src": "img/provisional/foto-08.svg", "ancho": 1200, "alto": 900, "pie": "Parada para comer" },
-  { "src": "img/provisional/foto-09.svg", "ancho": 1600, "alto": 900, "pie": "Fila de Vespinos" },
-  { "src": "img/provisional/foto-10.svg", "ancho": 900, "alto": 1200, "pie": "Socios en la sede" },
-  { "src": "img/provisional/foto-11.svg", "ancho": 1200, "alto": 900, "pie": "Chapa y pintura" },
-  { "src": "img/provisional/foto-12.svg", "ancho": 1200, "alto": 1200, "pie": "Mortadelo de 1968" }
+  {
+    "src": "img/vespinos/vespino-01.jpg",
+    "ancho": 1600,
+    "alto": 1200,
+    "pie": "Vespino Lujo Super naranja de 1971",
+    "autor": "Antonio Jesus Mancera Blanco",
+    "licencia": "CC BY-SA 3.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Vespino_Lujo_Super_Naranja_1971.jpg"
+  },
+  {
+    "src": "img/vespinos/vespino-02.jpg",
+    "ancho": 1600,
+    "alto": 902,
+    "pie": "Vespino L naranja",
+    "autor": "qperello",
+    "licencia": "CC BY-SA 2.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Vespino_L_naranja.jpg"
+  },
+  {
+    "src": "img/vespinos/vespino-03.jpg",
+    "ancho": 1600,
+    "alto": 898,
+    "pie": "Vespino TL visto de frente",
+    "autor": "Schumi4ever",
+    "licencia": "CC BY-SA 4.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Vespino_TL_del.jpg"
+  },
+  {
+    "src": "img/vespinos/vespino-04.jpg",
+    "ancho": 1600,
+    "alto": 1354,
+    "pie": "Vespinos aparcados en 1981",
+    "autor": "Montesita",
+    "licencia": "CC BY-SA 4.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Vespinos_Can_Picafort_1981.jpg"
+  },
+  {
+    "src": "img/vespinos/vespino-05.jpg",
+    "ancho": 1600,
+    "alto": 1066,
+    "pie": "Vespino GL de 1983",
+    "autor": "Txemari. (Navarra)",
+    "licencia": "CC0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:VESPINO_GL_(1983).jpg"
+  },
+  {
+    "src": "img/vespinos/vespino-06.jpg",
+    "ancho": 1600,
+    "alto": 1197,
+    "pie": "Surtido de Vespinos",
+    "autor": "Schumi4ever",
+    "licencia": "CC BY-SA 4.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Surtido_de_vespinos_01.jpg"
+  },
+  {
+    "src": "img/vespinos/vespino-07.jpg",
+    "ancho": 1600,
+    "alto": 1200,
+    "pie": "Un Vespino de calle",
+    "autor": "Diegui57",
+    "licencia": "CC BY-SA 4.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:La_%22Vespino%22.jpg"
+  },
+  {
+    "src": "img/vespinos/vespino-08.jpg",
+    "ancho": 1600,
+    "alto": 1175,
+    "pie": "Vespino NLX",
+    "autor": "Schumi4ever",
+    "licencia": "CC BY-SA 4.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Vespino_NLX.jpg"
+  },
+  {
+    "src": "img/vespinos/vespino-09.jpg",
+    "ancho": 1600,
+    "alto": 1197,
+    "pie": "Vespinos en fila",
+    "autor": "Schumi4ever",
+    "licencia": "CC BY-SA 4.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Surtido_de_vespinos_02.jpg"
+  },
+  {
+    "src": "img/vespinos/vespino-10.jpg",
+    "ancho": 1600,
+    "alto": 1066,
+    "pie": "Vespino clásico",
+    "autor": "Iñaki Pérez de Albéniz",
+    "licencia": "CC BY 2.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Vespino.jpg"
+  },
+  {
+    "src": "img/vespinos/vespino-11.jpg",
+    "ancho": 1600,
+    "alto": 2133,
+    "pie": "Vespa y Vespino juntos",
+    "autor": "Edgar Jiménez from Porto, Portugal",
+    "licencia": "CC BY-SA 2.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Vespa_e_vespino_(6928688283).jpg"
+  },
+  {
+    "src": "img/vespinos/vespino-12.jpg",
+    "ancho": 1600,
+    "alto": 980,
+    "pie": "Vespino SC",
+    "autor": "Txemari. (Navarra)",
+    "licencia": "CC0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Vespino_SCAN.jpg"
+  }
 ]
