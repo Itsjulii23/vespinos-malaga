@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" width="1200" height="1200">
-<rect width="1200" height="1200" fill="#2F7D4F"/>
-<circle cx="600" cy="540" r="264" fill="none" stroke="#17131D" stroke-width="47.519999999999996" opacity=".85"/>
-<circle cx="600" cy="540" r="118.8" fill="#17131D" opacity=".85"/>
-<text x="600" y="1056" text-anchor="middle" font-family="system-ui, sans-serif" font-size="66" font-weight="700" fill="#17131D">Foto provisional 07</text>
+<rect width="1200" height="1200" fill="#2B6A49"/>
+<circle cx="600" cy="540" r="264" fill="none" stroke="#232124" stroke-width="47.519999999999996" opacity=".85"/>
+<circle cx="600" cy="540" r="118.8" fill="#232124" opacity=".85"/>
+<text x="600" y="1056" text-anchor="middle" font-family="system-ui, sans-serif" font-size="66" font-weight="700" fill="#232124">Foto provisional 07</text>
 </svg>
