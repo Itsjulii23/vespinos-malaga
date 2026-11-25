@@ -1,0 +1,52 @@
+[
+  {
+    "src": "img/recortes/vespino-alx.webp",
+    "ancho": 900,
+    "alto": 532,
+    "pie": "Vespino ALX",
+    "autor": "Treyntaarrobas",
+    "licencia": "CC BY 4.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Lateral_izquierdo_de_un_Vespino_ALX_rojo.png",
+    "fondo": "img/vespinos/vespino-alx.webp"
+  },
+  {
+    "src": "img/recortes/vespino-lujo-s.webp",
+    "ancho": 900,
+    "alto": 1112,
+    "pie": "Vespino Lujo S",
+    "autor": "Antonio Jesus Mancera Blanco",
+    "licencia": "CC BY-SA 3.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Vespino_Lujo_Super_Naranja_1971.jpg",
+    "fondo": "img/vespinos/vespino-01.jpg"
+  },
+  {
+    "src": "img/recortes/vespino-tl.webp",
+    "ancho": 900,
+    "alto": 872,
+    "pie": "Vespino TL",
+    "autor": "Schumi4ever",
+    "licencia": "CC BY-SA 4.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Vespino_TL_del.jpg",
+    "fondo": "img/vespinos/vespino-03.jpg"
+  },
+  {
+    "src": "img/recortes/vespino-nlx.webp",
+    "ancho": 900,
+    "alto": 717,
+    "pie": "Vespino NLX",
+    "autor": "Schumi4ever",
+    "licencia": "CC BY-SA 4.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Vespino_NLX.jpg",
+    "fondo": "img/vespinos/vespino-08.jpg"
+  },
+  {
+    "src": "img/recortes/vespino-negro.webp",
+    "ancho": 900,
+    "alto": 604,
+    "pie": "Vespino negro",
+    "autor": "Iñaki Pérez de Albéniz",
+    "licencia": "CC BY 2.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Vespino.jpg",
+    "fondo": "img/vespinos/vespino-10.jpg"
+  }
+]

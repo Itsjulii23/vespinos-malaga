@@ -1,0 +1,57 @@
+[
+  {
+    "slug": "inauguramos-sede-teatinos",
+    "titulo": "Inauguramos nuestra sede en Teatinos",
+    "fecha": "2025-10-07",
+    "fechaTexto": "Octubre de 2025",
+    "resumen": "El Ayuntamiento nos cedió un local en la calle Shanti Andía y ya tenemos casa propia.",
+    "texto": [
+      "En octubre de 2025 inauguramos la sede del club en la calle Shanti Andía, 13, local 2, en el distrito de Teatinos–Cortijo Alto. El Ayuntamiento de Málaga nos cedió el local por periodos de cinco años.",
+      "Hasta ahora nos veíamos en la calle o en el garaje de algún socio. Con un local propio podemos guardar herramientas, trabajar en las restauraciones y, sobre todo, juntarnos a charlar con un Vespino delante.",
+      "Entre todos los socios reunimos unos 150 Vespinos, desde los primeros de 1968 hasta versiones muy posteriores. Pásate por la sede y cuéntanos qué Vespino tienes."
+    ],
+    "foto": "img/vespinos/vespino-06.jpg",
+    "provisional": true
+  },
+  {
+    "slug": "del-mortadelo-al-f9",
+    "titulo": "Del Mortadelo al F9: guía rápida de los modelos",
+    "fecha": "2025-11-20",
+    "resumen": "Más de treinta años de Vespinos resumidos en un par de minutos de lectura.",
+    "texto": [
+      "El primer Vespino salió de la fábrica de Moto Vespa S.A., en Madrid, en 1968. Llevaba un motor de dos tiempos de unos 49 cc, y a esa primera serie se la conoce como «Mortadelo».",
+      "Después llegó el Lujo, con encendido electrónico y cromados, y en 1973 una familia entera de modelos: la serie T, la L y la GL. En 1980 apareció el Super Confort (SC), que renovó el aspecto, y de su base nació la serie especial SCAN.",
+      "En los años ochenta el Vespino cambió por dentro: el AL (1985) estrenó la admisión por láminas, el ALX pasó a 12 voltios y el XE (1988) incorporó arranque eléctrico. Ya en los noventa, el F9, o «Fórmula 90», subió la compresión y el Fast Rider (1993) llevó por primera vez un freno de disco delantero.",
+      "¿Cuál es el tuyo? Cuéntanoslo en la próxima quedada."
+    ],
+    "foto": "img/vespinos/vespino-03.jpg",
+    "provisional": true
+  },
+  {
+    "slug": "como-se-restaura-un-vespino",
+    "titulo": "Cómo se restaura un Vespino, paso a paso",
+    "fecha": "2025-11-05",
+    "resumen": "De la chatarra a la carretera: así trabajamos cada Vespino que rescatamos.",
+    "texto": [
+      "Todo empieza con una revisión: ver en qué estado está el chasis, si el motor gira, qué piezas faltan y cuáles se pueden aprovechar.",
+      "Después se desmonta y se ordena todo. Cada tornillo y cada pieza se guarda etiquetado, porque el montaje es mucho más fácil si sabes de dónde salió cada cosa.",
+      "Con el motor se revisan el cilindro, el carburador y el encendido. La chapa se lija, se repara y se pinta. Por último se monta todo, se ajusta y se prueba el Vespino por la calle antes de darlo por bueno.",
+      "En la sede compartimos trucos y piezas, así que nadie restaura solo."
+    ],
+    "foto": "img/vespinos/vespino-05.jpg",
+    "provisional": true
+  },
+  {
+    "slug": "vespinos-con-pizza",
+    "titulo": "Vespinos con pizza: cuando Telepizza repartía en Vespino",
+    "fecha": "2025-11-18",
+    "resumen": "Una curiosidad de la historia del Vespino: el reparto a domicilio.",
+    "texto": [
+      "En 1987 Telepizza abrió su primera tienda en Madrid y usó Vespinos negros para el reparto a domicilio.",
+      "La relación duró años: entre 1994 y 2000 se fabricó la serie Vespino Telepizza, repartida en seis series sucesivas.",
+      "Si tienes uno de aquellos, seguro que tiene mucha historia detrás."
+    ],
+    "foto": "img/vespinos/vespino-09.jpg",
+    "provisional": true
+  }
+]

@@ -3,6 +3,8 @@ import quedadasJson from './quedadas.json';
 import patrocinadoresJson from './patrocinadores.json';
 import galeriaJson from './galeria.json';
 import historiaJson from './historia.json';
+import blogJson from './blog.json';
+import recortesJson from './recortes.json';
 
 export interface Quedada {
   slug: string;
@@ -30,6 +32,8 @@ export interface Foto {
   autor?: string;
   licencia?: string;
   fuente?: string;
+  /** Foto original, para el fondo difuminado de la portada. */
+  fondo?: string;
 }
 
 export interface Hito {
@@ -37,6 +41,55 @@ export interface Hito {
   titulo: string;
   texto: string;
   foto?: string;
+}
+
+export interface Articulo {
+  slug: string;
+  titulo: string;
+  fecha: string;
+  fechaTexto?: string;
+  resumen: string;
+  texto: string[];
+  foto?: string;
+  provisional?: boolean;
+}
+
+/** Artículos del blog, del más reciente al más antiguo. */
+export const BLOG: Articulo[] = [...(blogJson as Articulo[])].sort((a, b) => b.fecha.localeCompare(a.fecha));
+
+export interface GrupoMes {
+  clave: string;
+  titulo: string;
+  articulos: Articulo[];
+}
+
+/** Artículos agrupados por mes, del mes más reciente al más antiguo. */
+export function articulosPorMes(articulos: Articulo[] = BLOG): GrupoMes[] {
+  const grupos: GrupoMes[] = [];
+  for (const a of articulos) {
+    const clave = a.fecha.slice(0, 7);
+    let g = grupos.find((x) => x.clave === clave);
+    if (!g) {
+      const titulo = new Intl.DateTimeFormat('es-ES', { month: 'long', year: 'numeric' }).format(new Date(`${clave}-15T12:00:00`));
+      g = { clave, titulo: titulo.charAt(0).toUpperCase() + titulo.slice(1), articulos: [] };
+      grupos.push(g);
+    }
+    g.articulos.push(a);
+  }
+  return grupos;
+}
+
+/** La foto de la galería que tiene esa ruta, con su tamaño y pie. */
+export function fotoDe(src?: string): Foto | undefined {
+  return GALERIA.find((f) => f.src === src);
+}
+
+/** Vespinos recortados, sin fondo, para el carrusel de la portada. */
+export const RECORTES: Foto[] = recortesJson;
+
+/** El Vespino recortado que tiene esa ruta. */
+export function recorteDe(src: string): Foto | undefined {
+  return RECORTES.find((f) => f.src === src);
 }
 
 export const CLUB = club;

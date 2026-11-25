@@ -11,7 +11,27 @@
     "zona": "Málaga, distrito Teatinos–Cortijo Alto",
     "nota": "El Ayuntamiento nos cedió el local en octubre de 2025, por periodos de cinco años."
   },
-  "instagram": "https://www.instagram.com/vespinos_de_malaga/",
+  "restauracion": [
+    { "titulo": "Revisar", "texto": "Miramos el estado del chasis, si el motor gira y qué piezas faltan o se pueden aprovechar." },
+    { "titulo": "Desmontar", "texto": "Se desmonta todo y se guarda etiquetado, para que el montaje sea fácil." },
+    { "titulo": "Motor y chapa", "texto": "Revisamos cilindro, carburador y encendido. La chapa se lija, se repara y se pinta." },
+    { "titulo": "Montar y probar", "texto": "Se monta, se ajusta y se prueba por la calle antes de darlo por bueno." }
+  ],
+  "queHacemos": [
+    { "etiqueta": "Taller", "titulo": "Restauramos", "texto": "Rescatamos Vespinos olvidados en trasteros y cocheras y los devolvemos a la calle, pieza a pieza.", "foto": "img/vespinos/vespino-01.jpg" },
+    { "etiqueta": "Carretera", "titulo": "Salimos de ruta", "texto": "Rutas en grupo, quedadas y salidas solidarias por Málaga y alrededores, a ritmo de 49 cc.", "foto": "img/vespinos/vespino-04.jpg" },
+    { "etiqueta": "Sede", "titulo": "Nos juntamos", "texto": "En el local de Teatinos charlamos, compartimos piezas y nos echamos una mano con las averías.", "foto": "img/vespinos/vespino-06.jpg" }
+  ],
+  "cinta": ["Restauramos", "Rodamos", "Compartimos", "Desde 1968", "Teatinos, Málaga"],
+  "curiosidades": [
+    { "valor": "1,8 millones", "texto": "de Vespinos se fabricaron en la fábrica de Moto Vespa, en Madrid." },
+    { "valor": "49 cc", "texto": "y unos 2,2 caballos tenía el motor de dos tiempos del primer Vespino, el de 1968." },
+    { "valor": "1987", "texto": "es el año en que Telepizza abrió su primera tienda en Madrid y repartía con Vespinos negros." },
+    { "valor": "Mortadelo", "texto": "es el apodo de la primera serie, la de 1968 y 1969." },
+    { "valor": "Gilera Toledo", "texto": "fue el nombre con el que se exportó el Vespino SCAN, una serie especial negra o blanca." },
+    { "valor": "1970", "texto": "llegó el Brisa, una versión de exportación basada en la Piaggio Ciao." }
+  ],
+  "instagram":"https://www.instagram.com/vespinos_de_malaga/",
   "instagramUsuario": "@vespinos_de_malaga",
   "datos": [
     { "valor": "1968", "texto": "año del primer Vespino" },
